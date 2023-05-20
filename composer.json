@@ -1,0 +1,33 @@
+{
+    "name": "andrerademacher/codewars-php70",
+    "description": "Minimalistic PHP 7.0 environment for codewars",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": [
+        "codewars",
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Andre Rademacher",
+            "email": "andre.rademacher.business@googlemail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    },
+    "require": {
+        "php": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kata\\": "kata"
+        }
+    },
+    "scripts": {
+        "qa": [
+            "phpunit"
+        ],
+        "phpunit": "phpunit"
+    }
+}
