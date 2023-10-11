@@ -22,11 +22,26 @@ final class SnakesLaddersTest extends TestCase
 
     public function providePlay(): Generator
     {
-        yield 'Player 1 just throws 1 & 1' => [
+        yield 'player 1 just throws 1 & 1' => [
             [
                 'Player 1 is on square 38',
             ],
             [
+                [1, 1],
+            ]
+        ];
+
+        yield 'simple game with 4 turns' => [
+            [
+                'Player 1 is on square 38',
+                'Player 1 is on square 44',
+                'Player 2 is on square 31',
+                'Player 1 is on square 25',
+            ],
+            [
+                [1, 1],
+                [1, 5],
+                [6, 2],
                 [1, 1],
             ]
         ];
